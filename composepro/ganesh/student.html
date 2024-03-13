@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    {% include 'cdnlines.html'  %}
+</head>
+<body>
+    <form mehtod="post">
+      {% csrf_token%}
+      <label>ENTER NAME FIRST NAME:</label>
+      <input type="text" class="form-control" name="first"><br>
+
+      <label>ENTER NAME LAST NAME:</label>
+      <input type="text" class="form-control" name="last"><br>
+
+      <input type="submit" value="Save">
+      <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
